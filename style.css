@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container__1{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: left;
+    background-color: #f5f5f5;
+    color:  black;
+    z-index: 1;
+
+}
+.s1 img{
+    width: 175px;
+    margin-left: 40%;
+    margin-right: 10%;
+    
+ 
+}
+.s2{
+    display: flex;
+    position: absolute;
+    margin-right: 5%;
+    margin-left: 30% ;
+    
+}
+.s2 h3{
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.container__2{
+    margin-left: 40%;
+    font-size: 28px;
+    padding-top: 30px;
+    
+}
+.header h1{
+    font-weight: 40px;
+}
+.container__3 {
+    display: flex;
+justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    gap: 50px; /* Spacing between items */
+    margin-right: 600px;
+}
+
+/* Item styling */
+.container__sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Icon styling */
+.container__sec1 i {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Text styling */
+.container__sec1 p {
+    font-size: 14px;
+    margin: 10px;
+    color: #333;
+    flex-direction: column;
+
+}
+
+/* Hover underline effect */
+.container__sec1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007bff; 
+    transition: width 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.container__sec1:hover::after {
+    width: 100%;
+}
+
+.container__sec1:hover i, 
+.container__sec1:hover p {
+    color: #007bff; 
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    background-color: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: relative;
+    right:25%;
+}
+.section1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 5px 15px;
+    flex-grow: 1; 
+}
+.section1 i {
+    font-size: 18px;
+    color: #666;
+}
+.section1 input {
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    background-color: transparent;
+    color: #333;
+}
+.section1 input::placeholder {
+    color: #aaa;
+}
+.section1 input:focus {
+    outline: none;
+}
+.search-button:hover {
+    background-color:whitesmoke;
+}
+
+/* Container for image and text */
+.container__4 {
+    padding-top: 70px;
+    width: 100%; /* Full screen width */
+    height: 500px; /* Adjust the height */
+    position: relative; /* Position relative for absolute children */
+    overflow: hidden; /* Hide overflow content */
+    border-radius: 30px; /* Optional rounded corners */
+    right: 35%;
+}
+
+/* Background image styling */
+.container__4 img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+    position: relative;
+    
+}
+
+/* Overlay text styling */
+.overlay-text {
+    position: absolute; /* Absolute position inside container */
+    bottom: 1%; /* Position at bottom of the container */
+    left: 5%; /* Adjust distance from the left */
+    color: greenyellow; /* White text for visibility */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Add subtle shadow */
+    width: 90%; /* Restrict text width */
+    max-width: 600px; /* Prevent text from getting too wide */
+    line-height: 1.4; /* Improve readability */
+}
+
+/* Heading (h2) styling */
+.overlay-text h2 {
+    font-size: 2.5rem; /* Large heading */
+    margin: 0 0 10px; /* Spacing below the heading */
+    font-weight: bold; /* Bold text */
+}
+
+/* Paragraph styling */
+.overlay-text p {
+    font-size: 1.2rem; /* Readable font size */
+    margin: 0 0 20px; /* Spacing below paragraph */
+}
+
+/* Button styling */
+.search-button {
+    padding: 10px 20px; /* Button size */
+    font-size: 1rem; /* Font size */
+    background-color: green; /* White button */
+    color: black; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer; /* Pointer on hover */
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+}
+
+.search-button:hover {
+    background-color: #f2f2f2; /* Light gray hover effect */
+}
+.details{
+    position: relative;
+    right: 35%;
+    padding-top: 40px;
+    
+}
+.details p{
+    font-size:smaller;
+    padding-top: 10px;
+}
+
+
+.categories {
+    display: flex;
+    flex-grow: 1;
+    margin: 5px;
+    position: relative;
+    padding-top: 30px;
+}
+
+.categories div {
+    position: relative;
+    right: 600px;
+    margin-right: 20px; /* Optional: adds spacing between each image */
+    
+}
+
+
+
+.categories img {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 50px;
+    transition: transform 0.3s;
+}
+
+.categories p {
+    position: absolute;
+    bottom: 45px; /* Adjust this value to move text higher or lower */
+    width: 100%;
+    right: 50px;
+    color: red;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 0;
+}
+.details__1{
+    position: relative;
+    right: 35%;
+    padding: 20px;
+}
+.details__1 p{
+padding-top: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.categoriesss {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.categoriesss div {
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categoriesss div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.categoriesss img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.categoriesss img:hover {
+    transform: scale(1.1);
+}
+
+.categoriesss p {
+    margin: 10px 0;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.categoriesss p:hover {
+    text-decoration: underline;
+    color: #007bff;
+    
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Travel Cards Layout */
+.travel-cards {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual Travel Card */
+.travel-card {
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px; /* Fixed width for cards */
+}
+
+.travel-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.travel-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.travel-card img:hover {
+    transform: scale(1.1);
+}
+
+/* Text Styling for Captions */
+.travel-card p {
+    margin: 10px 0;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.travel-card p:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .travel-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .travel-card {
+        width: 90%; /* Full width for smaller screens */
+    }
+}
+.details__0{
+    position: relative;
+    right: 35%;
+    padding-top: 40px;
+    
+}
+.details__0 p{
+    font-size:smaller;
+    padding-top: 10px;
+}
+/* Footer General Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1; /* Equal space for all sections */
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #fff;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.footer-bottom p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-bottom p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+/* Dream Trip Section */
+.dream-trip {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 40px 20px; /* Adds space around the container */
+    text-align: center;
+    border: 1px solid #e0e0e0; /* Subtle border for separation */
+    border-radius: 10px; /* Rounded corners for modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth */
+    max-width: 800px; /* Restricts the width of the container */
+    margin: 20px auto; /* Centers the container on the page */
+}
+
+/* Title Styling */
+.dream-title {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Subtitle Styling */
+.dream-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-top: 0;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
